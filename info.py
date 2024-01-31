@@ -14,9 +14,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '21925188'))
-API_HASH = environ.get('API_HASH', 'f9b377f83f916d783f25d95a2f4e232e')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6919514458:AAEOIJqLDPBxo-PhrwUMHwRazg4SjC-93hw')
+API_ID = int(environ.get('API_ID', '29712643'))
+API_HASH = environ.get('API_HASH', '159ec16a16e76a7f5e51d3c7e157e386')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6214870846:AAEJbuiwVKmQUy-AOaKSv46YXaaXbcZTGDM')
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -29,11 +29,11 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/fadf76229a7c7de7
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/5e2d4418525832bc9a1b9.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS','993251295').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS','6908145919').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL',"-1001801247236")
+auth_channel = environ.get('AUTH_CHANNEL',"-1001801185696")
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -46,7 +46,7 @@ NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'True')), True)
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Downtown:9943009454@freefall.kdaz4ok.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "freefall")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Ipopudig')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Ipoopudig')
 
 # Others
 IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'False')), False)
@@ -63,7 +63,7 @@ PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/movieson_fire')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/requestedmovies_on')
 MSG_ALRT = environ.get('MSG_ALRT', 'ᴠᴀʟᴀʀ ᴍᴏʀɢʜᴜʟɪs!')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001636614179'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002092302121'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Comrade Movies')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
