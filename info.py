@@ -31,7 +31,7 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/5e2d4418525832bc9a
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS','6908145919').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1691590963').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL',"-1002017289942")
 auth_grp = environ.get('AUTH_GROUP')
@@ -93,7 +93,7 @@ LOG_STR += (f"MAX_LIST_ELM Found, long list will be shortened to first {MAX_LIST
 LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 
 
-SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 1800))
+SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 300))
 DOWNLOAD_TEXT_URL = "https://t.me/+pVPv69822bhmMmZl"
 CAPTION_BUTTON_URL = "https://t.me/haiabb"
 WEBHOOK = bool(environ.get("WEBHOOK", True))
